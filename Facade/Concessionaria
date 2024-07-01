@@ -1,0 +1,29 @@
+package facadeExemplo;
+
+public class Concessionaria implements GerenciarExportacoes {
+
+	@Override
+	public void ListaDeProdutos() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nLista de Produtos:");
+		System.out.println("Sedan usado - R$25.000,00");
+		System.out.println("Sedan novo - R$125.000,00");
+		System.out.println("Hatch usado - R$20.000,00");
+		System.out.println("Hatch novo - R$100.000,00");
+	}
+
+	@Override
+	public void PrecoPedido() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nPreço do Pedido:");
+		System.out.println("O pedido é de: R$290.000,00");
+	}
+
+	@Override
+	public void LocalLoja() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nLocalização da Loja");
+		System.out.println("Moinhos de Vento - Porto Alegre");
+	}
+
+}
