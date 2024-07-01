@@ -1,0 +1,27 @@
+package facadeExemplo;
+
+public class Ferragem implements GerenciarExportacoes{
+
+	@Override
+	public void ListaDeProdutos() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nLista de Produtos:");
+		System.out.println("Viga de Madeira - R$50,00");
+		System.out.println("Saco de Pregos - R$10,00");
+	}
+
+	@Override
+	public void PrecoPedido() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nPreço do Pedido:");
+		System.out.println("O pedido é de: R$120,00");
+	}
+
+	@Override
+	public void LocalLoja() {
+		// TODO Auto-generated method stub
+		System.out.println("\n\nLocalização da Loja");
+		System.out.println("Bom Fim - Porto Alegre");
+	}
+
+}
