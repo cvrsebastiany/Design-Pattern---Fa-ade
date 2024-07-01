@@ -1,0 +1,31 @@
+package facadeExemplo;
+
+public class Exportador {
+	private GerenciarExportacoes revendaDeFerro;
+    private GerenciarExportacoes ferragem;
+    private GerenciarExportacoes concessionaria;
+
+    public Exportador() {
+        revendaDeFerro = new RevendaDeFerro();
+        ferragem = new Ferragem();
+        concessionaria = new Concessionaria();
+    }
+
+	public void informacoesRevendaDeFerro() {
+		revendaDeFerro.ListaDeProdutos();
+		revendaDeFerro.PrecoPedido();
+        revendaDeFerro.LocalLoja();
+	}
+
+    public void informacoesFerragem() {
+        ferragem.ListaDeProdutos();
+        ferragem.PrecoPedido();
+    	ferragem.LocalLoja();
+    }
+
+    public void informacoesConcessionaria() {
+    	concessionaria.ListaDeProdutos();
+    	concessionaria.PrecoPedido();
+    	concessionaria.LocalLoja();
+    }
+}
