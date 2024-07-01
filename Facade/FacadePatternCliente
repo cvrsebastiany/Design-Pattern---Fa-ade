@@ -1,0 +1,39 @@
+package facadeExemplo;
+
+import java.util.Scanner;
+
+public class FacadePatternCliente {
+
+	public static void main(String[] args) {
+
+		int user = 0;
+		Scanner sc = new Scanner(System.in);
+
+		while (user != 4) {
+			System.out.println("\n\n//////////BEM-VINDO AO PROGRAMA//////////\n");
+			System.out.println("Por favor, escolha o que deseja fazer:\n"
+					+ "1) Consultar as informações da Revenda de Ferro\n" + "2) Consultar as informações da Ferragem\n"
+					+ "3) Consultar as informações da Concessionária\n" + "4) Sair do programa\n"
+					+ "\nINSIRA SUA ESCOLHA: ");
+
+			user = sc.nextInt();
+
+			Exportador ex = new Exportador();
+
+			switch (user) {
+			case 1:
+				ex.informacoesRevendaDeFerro();
+				break;
+			case 2:
+				ex.informacoesFerragem();
+				break;
+			case 3:
+				ex.informacoesConcessionaria();
+				break;
+			case 4:
+				System.out.println("Programa encerrado!");
+				break;
+			}
+		}
+	}
+}
