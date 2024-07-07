@@ -22,7 +22,7 @@ public class Concessionaria implements GerenciarExportacoes {
 	@Override
 	public void LocalLoja() {
 		// TODO Auto-generated method stub
-		System.out.println("\n\nLocalização da Loja");
+		System.out.println("\n\nLocalização da Loja:");
 		System.out.println("Moinhos de Vento - Porto Alegre");
 	}
 
