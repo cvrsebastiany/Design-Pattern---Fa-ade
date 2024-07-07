@@ -20,7 +20,7 @@ public class Ferragem implements GerenciarExportacoes{
 	@Override
 	public void LocalLoja() {
 		// TODO Auto-generated method stub
-		System.out.println("\n\nLocalização da Loja");
+		System.out.println("\n\nLocalização da Loja:");
 		System.out.println("Bom Fim - Porto Alegre");
 	}
 
