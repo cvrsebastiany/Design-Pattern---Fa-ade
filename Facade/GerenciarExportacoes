@@ -2,7 +2,7 @@ package facadeExemplo;
 
 public interface GerenciarExportacoes {
     
-	//imprime os nomes e códigos dos produtos
+	//imprime os nomes e preços dos produtos
     public void ListaDeProdutos();
 
     //imprime o preço do pedido realizado
